@@ -209,6 +209,7 @@ html {
   font-size: 1.175rem;
   line-height: 1.5;
   max-width: 50ch;
+  color: hsl(270, 7%, 64%);
 }
 
 @media (min-width: 1200px) {
