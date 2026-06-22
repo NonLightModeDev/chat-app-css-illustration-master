@@ -1,51 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="./css/style.css" />
 
-  Samuel Green
-  Available to Walk
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section
+        class="cellphone-illustration"
+        aria-label="Mobile App Illustration"
+      >
+        <div class="app">
+          <header class="app__header">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+            <div class="profile">
+              <img
+                class="profile__avatar"
+                src="./images/avatar.jpg"
+                alt="Avatar"
+              />
+              <div class="profile__info">
+                <strong class="profile__name">Samuel Green</strong>
+                <span class="profile__status">Available to Walk</span>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"
+              />
+            </svg>
+          </header>
+          <section class="app__chatbox">
+            <div class="message message--received">
+              That sounds great. I’d be happy with that.
+            </div>
+            <div class="message message--received">
+              Could you send over some pictures of your dog, please?
+            </div>
+            <div class="photos">
+              <img src="./images/dog-image-1.jpg" alt="Dog Photo" />
+              <img src="./images/dog-image-2.jpg" alt="Dog Photo" />
+              <img src="./images/dog-image-3.jpg" alt="Dog Photo" />
+            </div>
+            <div class="message message--sent">
+              Here are a few pictures. She’s a happy girl!
+            </div>
+            <div class="message message--sent">Can you make it?</div>
+            <div class="message message--received">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </div>
+            <div class="message message--received input-radio">
+              <span class="input-radio__radio"></span>
+              <p class="input-radio__text">30 minute walk</p>
+              <span class="input-radio__price">$29</span>
+            </div>
+            <div class="message message--received input-radio">
+              <span class="input-radio__radio"></span>
+              <p class="input-radio__text">1 hour walk</p>
+              <span class="input-radio__price">$49</span>
+            </div>
 
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+            <div class="textbox">
+              <p class="textbox__text">Type a message…</p>
+              <div class="textbox__send-button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="24px"
+                  viewBox="0 -960 960 960"
+                  width="24px"
+                  fill="#e3e3e3"
+                >
+                  <path
+                    d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="illustration-description">
+        <h1 class="illustration-description__title">Simple booking</h1>
+        <p class="illustration-description__text">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </section>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/chat-app-css-illustration-O5auMkFqY"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/NonLightModeDev" target="_blank"
+        >André Filipe</a
+      >.
+    </footer>
+  </body>
 </html>
